@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Happy Valentine 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>💕 Selamat Hari Valentine 💕</h1>
+        <p id="names">Untuk Orang Terkasih</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Foto Section -->
+        <section class="card photo-section">
+            <h2>📸 Foto Kenangan Kita</h2>
+            <div class="gallery-container">
+                <img id="mainPhoto" src="https://via.placeholder.com/400x300?text=Foto+Couple" alt="Foto Couple" class="gallery-image">
+                <div class="gallery-controls">
+                    <button onclick="prevPhoto()" class="btn">← Sebelumnya</button>
+                    <button onclick="nextPhoto()" class="btn">Selanjutnya →</button>
+                </div>
+                <p id="photoCaption" class="photo-caption">Foto Kenangan Indah Kita</p>
+            </div>
+        </section>
+
+        <!-- Pesan Cinta Section -->
+        <section class="card message-section">
+            <h2>💌 Pesan Cinta Untukmu</h2>
+            <div class="message-box">
+                <p id="loveMessage">Kamu adalah orang yang paling berharga dalam hidupku. Setiap momen denganmu adalah berkah. Aku mencintaimu dengan sepenuh hati. Happy Valentine! 💕</p>
+            </div>
+            <button onclick="newMessage()" class="btn">Pesan Berikutnya</button>
+        </section>
+
+        <!-- Musik Section -->
+        <section class="card music-section">
+            <h2>🎵 Lagu Spesial Untuk Mu</h2>
+            <div class="music-player">
+                <audio id="musicPlayer" controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Browser Anda tidak mendukung audio.
+                </audio>
+            </div>
+            <p class="music-title">Lagu Romantis Special Edition</p>
+        </section>
+
+        <!-- Love Button -->
+        <section class="card love-button-section">
+            <h2>💗 Tombol Cinta</h2>
+            <button onclick="showLoveEffect()" class="love-btn">❤️ KLIK UNTUK CINTA ❤️</button>
+            <p id="loveCount">Jumlah Cinta: <span id="count">0</span></p>
+        </section>
+    </div>
+
+    <!-- Falling Hearts Animation -->
+    <div id="hearts-container"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ | Happy Valentine's Day 2026 💕</p>
+        <p>Dibuat dengan cinta untuk orang terkasih</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
